@@ -4,7 +4,7 @@
 
 A modern SharePoint Framework (SPFx) web part for displaying Frequently Asked Questions (FAQs) from SharePoint lists. This web part provides a clean, interactive interface with advanced features like search, pagination, collapsible items, and tooltips for help words.
 
-![FAQ Web Part](./assets/faq-webpart-preview.png)
+![FAQ Web Part](https://i.ibb.co/0jzWKs0m/faqs.png)
 
 ## Used SharePoint Framework Version
 
