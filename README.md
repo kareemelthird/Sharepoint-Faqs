@@ -36,15 +36,6 @@ A modern SharePoint Framework (SPFx) web part for displaying Frequently Asked Qu
 
 ## Prerequisites
 
-- SharePoint Online environment
-- SharePoint list with the following columns:
-  - **Title** (Single line of text) - FAQ questions
-  - **Answer** (Multiple lines of text) - FAQ answers
-  - **HelpWord** (Single line of text) - Comma-separated help words for tooltips
-  - **Explain** (Multiple lines of text) - Tooltip explanations for help words
-
-## Prerequisites
-
 ### System Requirements
 
 - **Node.js**: Version 16.13.0 or higher (but less than 17.0.0)
@@ -81,7 +72,7 @@ Explain: "Authentication portal is where you manage your login credentials and A
 
 | Solution    | Author(s)                                               |
 | ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| SharePoint FAQ Web Part | [Kareem Hassan](https://github.com/kareemelthird) |
 
 ## Project Structure
 
@@ -202,7 +193,7 @@ The web part uses SCSS modules for styling. Customize appearance by modifying:
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/kareemelthird/Sharepoint-Faqs
 cd sharepoint-faq-webpart
 
 # Install dependencies
@@ -316,19 +307,32 @@ The `.sppkg` file will be created in `sharepoint/solution/` folder.
 - **Lazy Loading**: Components load only when needed
 - **Optimized Builds**: Production builds are minified and optimized
 
-## Features
+## Key Features Explained
 
-Description of the extension that expands upon high-level summary above.
+### Search Functionality
+The web part includes a powerful search feature that works across all FAQ fields:
+- **Title**: Searches question text
+- **Answer**: Searches answer content
+- **HelpWord**: Searches tooltip keywords
+- **Explain**: Searches tooltip explanations
 
-This extension illustrates the following concepts:
+### Pagination System
+- Shows 4 FAQs per page for optimal performance
+- Previous/Next navigation buttons
+- Numbered page buttons for quick access
+- Page information display (e.g., "Showing 1-4 of 12 questions")
 
-- topic 1
-- topic 2
-- topic 3
+### Interactive Tooltips
+- Help words in answers are automatically highlighted
+- Hover over highlighted words to see explanations
+- Uses browser's default tooltip for reliability
+- No complex JavaScript positioning required
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+### Responsive Design
+- Mobile-first approach with responsive breakpoints
+- Touch-friendly interface for tablets and phones
+- Adaptive layouts that work on all screen sizes
+- Accessible keyboard navigation
 
 ## References
 
@@ -337,3 +341,15 @@ This extension illustrates the following concepts:
 - [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
 - [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guidelines](./CONTRIBUTING.md) before submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+---
+
+> **Note**: This web part demonstrates modern SharePoint Framework development practices and can be used as a template for building similar solutions. Feel free to customize and extend it for your specific requirements.
