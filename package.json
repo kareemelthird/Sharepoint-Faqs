@@ -1,6 +1,7 @@
 {
-  "name": "fa-qs",
-  "version": "0.0.1",
+  "name": "sharepoint-faq-webpart",
+  "version": "1.0.0",
+  "description": "Modern SharePoint Framework web part for displaying FAQs with search, pagination, and interactive tooltips",
   "private": true,
   "engines": {
     "node": ">=16.13.0 <17.0.0"
@@ -8,7 +9,9 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "gulp bundle",
+    "build-production": "gulp clean && gulp build --ship && gulp bundle --ship && gulp package-solution --ship",
     "clean": "gulp clean",
+    "serve": "gulp serve",
     "test": "gulp test"
   },
   "dependencies": {
