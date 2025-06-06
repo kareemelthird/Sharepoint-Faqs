@@ -23,7 +23,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-          - name: Install global dependencies
+        
+    - name: Install global dependencies
       run: |
         npm install -g gulp-cli@2.3.0
         npm install -g @microsoft/generator-sharepoint@1.16.1
@@ -55,7 +56,8 @@ jobs:
           lib/
           dist/
           temp/manifests.json
-          code-quality:
+          
+  code-quality:
     runs-on: ubuntu-latest
     
     steps:
